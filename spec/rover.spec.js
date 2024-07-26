@@ -7,7 +7,29 @@ const Command = require('../command.js');
 
 
 describe("Rover class", function() {
+    it("constructor sets position and default values for mode and generatorWatts", function() {
+    })
 
-  // 7 tests here!
+    it("response returned by recieveMessage contains the name of the message", function(){
+    })
+
+    it("response returned by recieveMessage contains the name of the message", function() {
+    })
+
+    it("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
+    })
+
+    it("responds correctly to the status check command", function() {
+    })
+
+    it("responds correctly to the mode change command", function() {
+    })
+
+    it("responds with a false completed value when attempting to move in LOW_POWER mode", function() {
+    })
+
+    it("responds with the position for the move command", function() {
+    })
+  
 
 });
