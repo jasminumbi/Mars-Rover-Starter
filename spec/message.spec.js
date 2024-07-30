@@ -10,17 +10,14 @@ describe("Message class", function() {
     })
 
     it("constructor sets name", function() {
+        let message = new Message("Zippy");
+        expect(message.name).toBe("Zippy");
     })
 
     it("contains a commands array passed into the constructor as the 2nd argument", function(){
+        let commands = [new Command('MODE_CHANGE', 'LOW_POWER'), new Command('STATUS_CHECK')]
+        let message = new Message("Name t-t-test", commands);
+        expect(message.commands).toEqual(commands);
     })
 
-    it("contains a commands array passed into the constructor as the 2nd argument", function(){
-    })
-
-    it("response returned by recieveMessage contains the name of the message", function() {
-    })
-
-    it("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
-    })
 });

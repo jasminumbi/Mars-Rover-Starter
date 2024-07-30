@@ -10,8 +10,12 @@ describe("Command class", function() {
   });
 
   it("constructor sets command type", function() {
+    let command = new Command("CHARGE!");
+    expect(command.commandType).toBe("CHARGE!");
   });
 
   it("constructor sets a value passed in as the 2nd argument", function(){
+    let command = new Command("CHARGE!", "RETREAT!");
+    expect(command.value).toBe("RETREAT!");
   });
 });
